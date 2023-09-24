@@ -1,5 +1,6 @@
-import { Hello, Hello2 } from "./Hello";
-import { FruitsDisplay } from "./fruitsArr";
+// import { Hello, Hello2 } from "./Hello";
+// import { FruitsDisplay } from "./fruitsArr";
+import { FruitsObj } from "./fruitsObj";
 
 // Displaying component here from imported module ('Hello.jsx');
 function App() {
@@ -14,10 +15,7 @@ function App() {
   return (
     <div>
       <h1>
-        {/* <Hello name="Daryll" age="24" seatNumbers={seatNumbers} />
-        <Hello2 personObj={personObj} /> */}
-        // Display here for array mapping from fruitsArr.jsx
-        <FruitsDisplay />
+        <FruitsObj />
       </h1>
     </div>
   );
