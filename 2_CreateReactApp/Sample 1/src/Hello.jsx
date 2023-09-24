@@ -1,10 +1,12 @@
-
-// First creation of component here
-function Hello() {
-  return <h1>Hello World</h1>
+// First creation of component here with props
+function Hello({ name }) {
+  return (
+    <h1>
+      Hello World!
+      {name}
+    </h1>
+  );
 }
 
-
-
-// Export here 
+// Export here
 export default Hello;

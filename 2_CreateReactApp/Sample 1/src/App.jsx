@@ -1,10 +1,8 @@
-import Hello from './Hello';
-
+import Hello from "./Hello";
 
 // Displaying component here from imported module ('Hello.jsx');
 function App() {
-
-  return <Hello />;
+  return <Hello name="Daryll" />;
 }
 
-export default App
+export default App;
