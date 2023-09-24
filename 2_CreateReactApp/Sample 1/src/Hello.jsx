@@ -1,9 +1,10 @@
 // First creation of component here with destructured props
 
-function Hello({ name, age }) {
+// immutability of Props
+function Hello(props) {
   return (
     <h1>
-      Hello World!, Hey there {name}, I'm {age} years old
+      Hello World!, Hey there {props.name}, I'm {props.age} years old
     </h1>
   );
 }
