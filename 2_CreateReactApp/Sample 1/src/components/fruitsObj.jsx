@@ -17,6 +17,8 @@ function FruitsObj() {
           // <li key={fruit.name}>
           //   {fruit.looksLike} {fruit.name} = ${fruit.price}
           // </li>
+
+          // Rendering components inside a loop here
           <FruitsObjComponents
             key={fruit.name}
             figure={fruit.looksLike}
