@@ -1,5 +1,6 @@
 // import { Hello, Hello2 } from "./Hello";
 // import { FruitsDisplay } from "./fruitsArr";
+import { TernaryComponentHere } from "./components/ConditionalComponents/TernaryComponent";
 import { ConditionalComponentsDisplayHere } from "./components/ConditionalComponents/mainConditional";
 import { FruitsObj } from "./components/fruitsObj";
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <div>
       <h1>
-        <ConditionalComponentsDisplayHere />
+        <TernaryComponentHere />
       </h1>
     </div>
   );
