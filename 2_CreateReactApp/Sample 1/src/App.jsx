@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <h1>
-        <TernaryComponentHere />
+        <FruitsObj />
       </h1>
     </div>
   );
