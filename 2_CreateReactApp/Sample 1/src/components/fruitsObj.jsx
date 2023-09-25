@@ -2,12 +2,12 @@ import { FruitsObjComponents } from "./fruitsObjComponents";
 
 function FruitsObj() {
   const fruits = [
-    { name: "Apple", price: 23, looksLike: "🍎" },
-    { name: "Banana", price: 34, looksLike: "🍌" },
-    { name: "Cherry", price: 64, looksLike: "🍒" },
-    { name: "Tomato", price: 53, looksLike: "🍅" },
-    { name: "Pineapple", price: 100, looksLike: "🍍" },
-    { name: "Kiwifruit", price: 83, looksLike: "🥝" },
+    { name: "Apple", price: 23, looksLike: "🍎", isSoldOut: false },
+    { name: "Banana", price: 34, looksLike: "🍌", isSoldOut: true },
+    { name: "Cherry", price: 64, looksLike: "🍒", isSoldOut: false },
+    { name: "Tomato", price: 53, looksLike: "🍅", isSoldOut: true },
+    { name: "Pineapple", price: 100, looksLike: "🍍", isSoldOut: true },
+    { name: "Kiwifruit", price: 83, looksLike: "🥝", isSoldOut: false },
   ];
 
   return (
@@ -24,6 +24,7 @@ function FruitsObj() {
             figure={fruit.looksLike}
             name={fruit.name}
             prices={fruit.price}
+            isSoldOut={fruit.isSoldOut}
           />
         ))}
       </ul>

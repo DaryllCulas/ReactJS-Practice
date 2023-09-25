@@ -1,11 +1,11 @@
 // Rendering components inside a loop here
-function FruitsObjComponents({ figure, name, prices }) {
+function FruitsObjComponents({ figure, name, prices, isSoldOut }) {
   return (
     <>
       {/* {figure} {name} = ${prices} */}
-      {prices > 70 ? (
+      {prices > 1 ? (
         <li>
-          {figure} {name} {prices}
+          {figure} {name} = ${prices} = {isSoldOut ? "Sold Out" : ""}
         </li>
       ) : (
         " " // if false, it returns empty string
