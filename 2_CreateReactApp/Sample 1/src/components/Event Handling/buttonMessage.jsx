@@ -1,4 +1,4 @@
-function DisplayingButtonMessage() {
+export default function DisplayingButtonMessage() {
   function clickShow() {
     const clickerMessage = "Clicked!";
     console.log({ clickerMessage });
@@ -9,5 +9,3 @@ function DisplayingButtonMessage() {
     </div>
   );
 }
-
-export { DisplayingButtonMessage };
