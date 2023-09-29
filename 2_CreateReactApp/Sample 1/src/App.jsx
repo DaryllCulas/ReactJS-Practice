@@ -1,10 +1,10 @@
-import { MultipleInputForm } from "./components/EventHandlingInputFields/multipleInputForm";
+import { HandlingFormSubmission } from "./components/EventHandlingInputFields/HandlingFormSubmission";
 
 // Displaying component here from imported module ('Hello.jsx');
 function App() {
   return (
     <div>
-      <MultipleInputForm />
+      <HandlingFormSubmission />
     </div>
   );
 }
