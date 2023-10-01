@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TaskListItem from "./TaskListItem";
 
 const TodoApp = () => {
   const submitHandler = (e) => {
@@ -20,7 +21,9 @@ const TodoApp = () => {
         ></input>
         <button type="submit">ADD TASK</button>
       </form>
-      {console.log(TaskList)}
+      {TaskList.map((item) => (
+        <TaskListItem key={item} item={item} />
+      ))}
     </div>
   );
 };
