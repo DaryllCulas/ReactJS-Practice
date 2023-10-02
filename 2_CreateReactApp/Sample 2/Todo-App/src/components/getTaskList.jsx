@@ -1,8 +1,9 @@
 import TaskListItem from "./TaskListItem";
+import styles from "./css/getTaskList.module.css";
 
 const GetTaskList = ({ TaskList }) => {
   return (
-    <div>
+    <div className={styles.getList}>
       {TaskList.map((item) => (
         <TaskListItem key={item} item={item} />
       ))}

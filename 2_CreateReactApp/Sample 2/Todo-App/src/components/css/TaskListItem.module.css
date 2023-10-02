@@ -1,0 +1,16 @@
+.item {
+  width: 450px;
+  color: black;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0 auto;
+}
+.itemName {
+  font-weight: bold;
+  padding: 25px;
+  text-align: center;
+}
+
+.line {
+  border: 1px solid;
+}

@@ -1,0 +1,9 @@
+.getList {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 10px;
+  width: 730px;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.4);
+}
