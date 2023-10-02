@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./css/Form.module.css";
 
 const Form = ({ TaskList, setTaskList }) => {
   const [Task, setTask] = useState("");
@@ -10,13 +11,19 @@ const Form = ({ TaskList, setTaskList }) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
-      <input
-        onChange={(e) => setTask(e.target.value)}
-        type="text"
-        value={Task}
-      ></input>
-      <button type="submit">ADD TASK</button>
+    <form className={styles.formElement} onSubmit={submitHandler}>
+      <div className={styles.inputContainer}>
+        <input
+          className={styles.inputElement}
+          onChange={(e) => setTask(e.target.value)}
+          type="text"
+          value={Task}
+          placeholder="Enter Todo here..."
+        />
+        <button className={styles.buttonElement} type="submit">
+          ADD TASK
+        </button>
+      </div>
     </form>
   );
 };
