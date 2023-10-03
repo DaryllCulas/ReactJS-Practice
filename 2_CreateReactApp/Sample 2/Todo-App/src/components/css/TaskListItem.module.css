@@ -29,3 +29,6 @@
   background-color: black;
   color: white;
 }
+.markAscomplete {
+  text-decoration: line-through red;
+}
