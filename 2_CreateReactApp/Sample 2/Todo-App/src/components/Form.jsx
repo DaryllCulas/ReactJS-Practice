@@ -2,12 +2,13 @@ import { useState } from "react";
 import styles from "./css/Form.module.css";
 
 const Form = ({ TaskList, setTaskList }) => {
-  const [Task, setTask] = useState("");
+  //const [Task, setTask] = useState("");
+  const [Task, setTask] = useState({ name: "", done: false });
 
   const submitHandler = (e) => {
     e.preventDefault(); // Prevent default submission
     setTaskList([...TaskList, Task]);
-    setTask("");
+    setTask({ name: "", done: false });
   };
 
   return (
@@ -15,9 +16,9 @@ const Form = ({ TaskList, setTaskList }) => {
       <div className={styles.inputContainer}>
         <input
           className={styles.inputElement}
-          onChange={(e) => setTask(e.target.value)}
+          onChange={(e) => setTask({ name: e.target.value, done: false })}
           type="text"
-          value={Task}
+          value={Task.name}
           placeholder="Enter Todo here..."
         />
         <button className={styles.buttonElement} type="submit">

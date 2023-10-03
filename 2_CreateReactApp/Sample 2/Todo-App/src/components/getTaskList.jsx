@@ -6,7 +6,7 @@ const GetTaskList = ({ TaskList, setTaskList }) => {
     <div className={styles.getList}>
       {TaskList.map((item) => (
         <TaskListItem
-          key={item}
+          key={item.name}
           item={item}
           TaskList={TaskList}
           setTaskList={setTaskList}

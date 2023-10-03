@@ -7,7 +7,7 @@ const TaskListItem = ({ item, TaskList, setTaskList }) => {
   return (
     <div className={styles.item}>
       <div className={styles.itemName}>
-        {item}
+        {item.name}
         <span>
           <button
             onClick={() => handleDelete(item)}
