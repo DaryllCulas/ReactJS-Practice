@@ -1,11 +1,20 @@
 import styles from "./css/TaskListItem.module.css";
-const TaskListItem = ({ item }) => {
+const TaskListItem = ({ item, TaskList, setTaskList }) => {
+  const handleDelete = (item) => {
+    console.log("delete button", item);
+    setTaskList(TaskList.filter((task) => task !== item));
+  };
   return (
     <div className={styles.item}>
       <div className={styles.itemName}>
         {item}
         <span>
-          <button className={styles.deleteButton}>X</button>
+          <button
+            onClick={() => handleDelete(item)}
+            className={styles.deleteButton}
+          >
+            X
+          </button>
         </span>
       </div>
 

@@ -1,11 +1,16 @@
 import TaskListItem from "./TaskListItem";
 import styles from "./css/getTaskList.module.css";
 
-const GetTaskList = ({ TaskList }) => {
+const GetTaskList = ({ TaskList, setTaskList }) => {
   return (
     <div className={styles.getList}>
       {TaskList.map((item) => (
-        <TaskListItem key={item} item={item} />
+        <TaskListItem
+          key={item}
+          item={item}
+          TaskList={TaskList}
+          setTaskList={setTaskList}
+        />
       ))}
     </div>
   );

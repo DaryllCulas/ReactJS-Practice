@@ -7,7 +7,7 @@ const TodoApp = () => {
   return (
     <div>
       <Form TaskList={TaskList} setTaskList={setTaskList} />
-      <GetTaskList TaskList={TaskList} />
+      <GetTaskList TaskList={TaskList} setTaskList={setTaskList} />
     </div>
   );
 };
